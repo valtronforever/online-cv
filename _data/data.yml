@@ -95,8 +95,8 @@ skills:
     title: Skills
 
     toolset:
-      - name: Python (Django, FastAPI, Pandas, Flask, AsyncIO, Threading, Cryptography, PyGObject)
-      - name: Js & Ts (Node, Vue, Nuxt, Meteor)
-      - name: Databases (MySql, Postgres, MongoDB)
+      - name: Python (Django, FastAPI, Pandas, Flask, AsyncIO, Threading, Cryptography, PyGObject). From 2013
+      - name: Js & Ts (Node, Vue, Nuxt, Meteor, React, Backbone, jQuery). From 2012
+      - name: Databases (MySql, Postgres, MongoDB). From 2010
       - name: Other tools like Radis, RabbitMQ, Elastic
       - name: Knowledge of a Linux system, Docker, some DevOps skills
