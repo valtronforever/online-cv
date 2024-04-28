@@ -33,7 +33,6 @@ sidebar:
       title: Interests
       info:
         - item: 3d Printing
-          link: https://drukarmy.org.ua/ua
 
 career-profile:
     title: Career Profile
@@ -52,51 +51,90 @@ education:
 experiences:
     title: Experiences
     info:
-      - role: Python Engineer, Small Team Lead
+      - role: Python Fullstack Developer (Django, Vue)
         time: 2022-06 - Present
         company: Secjur, Hamburg
         details: |
-          Developing a service for working with third party data
-          providers, like Azure, Google, AWS, Slack, etc. The full
-          list can be found at Secjur web site. Creating an api with
-          anonymized personal and corporate information for data science
-          team. Huge work on moving front end from js to ts with automated
-          code generation based on OpenAPI. Digital Compliance Office development.
+          Digital Compliance Office as an unified platform for
+          data protection, information security and compliance with
+          automation capabilities.\
+          \
+          **Interesting solutions:**\
+          Create a service for working with third party data
+          providers, like Azure, Google, AWS, Slack, etc. using FastAPI
+          in async mode and OpenAPI code generation as SDK for this service.
+          This approach allow to call some "fast" API actions directly from base system
+          (without dealing any message brokers) and use celery for a "long" API calls.
 
-      - role: Python Engineer
+      - role: Python Fullstack Developer (Django, Vue, GTK)
         time: 2014-09 - 2022-02
         company: Pharmacy company "Nasha Apteka", Kherson
         details: |
-          Development: back office, api, order management
+          Complex business solution, including back office, order management
           system, service quality control system with audio
-          monitoring, data analysis, client app, connecting
-          cash registers to the app, connecting receipt and
-          label printers, small mobile applications, server and
-          client system administration
+          monitoring, data analysis, desktop app with cash registers 
+          and label printers support, small mobile applications.\
+          \
+          **Interesting solutions:**\
+          To have an ability to make an orders by multiple managers at same time without any collisions
+          I decide to move order management system to dedicated service and rewrite it using Meteor and MongoDB.
+          It's continue to use Django auth system, has simple implementation and allow users to see changes
+          immediately.
+          
 
-      - role: PHP Programmer
+      - role: Python Fullstack Developer (Django, Backbone)
+        time: late 2013
+        company: side project
+        details: |
+          Adverse media collect and search system.\
+          \
+          **Interesting solutions:**\
+          Use Elasticsearch together with main Django db to store information about adverse media
+          (more then 10 millions records of same type) and have quick fulltext search with hits highlighting.
+          Also Elasticsearch supports horizontal scaling, which will be required in the future.
+
+      - role: PHP Developer
         time: 2012-03 - 2014-09
         company: Binopt, Kherson
         details: |
           Binopt, Kherson
           Crm system development for working with clients,
-          interesed in binary options tading.
-          Creating backoffice (Php, backbone) and
-          notification system (Node, socketio)
+          interested in binary options trading.\
+          \
+          **Interesting solutions:**\
+          As our company priority was been a quick response on any client iterations
+          we create a real time notification system using simple periodical GET requests from user browser.
+          It's work for some time, but when company was grow we start to "spam" ourself by this notification requests.
+          When I receive a task for optimising notification system, I write a simple NodeJS app with SocketIO library
+          to use websockets (ant their replacement for old browsers).
+          As result we was have something like Pusher but in 2013.
+          
 
       - role: DB Administration and Data Analysis
         time: 2010-08 - 2012-03
         company: Ministry of Internal Affairs in Kherson region, Kherson
         details: |
-          Administration Oracle db. Writing plsql programs.
-          Creating tools for data export and visualization.
+          Administration Oracle DB. Writing PL/SQL programs.
+          Creating tools for data export and visualization.\
+          \
+          **Interesting solutions:**\
+          As our team was have a many requests from Statistics department (few for a day)
+          to describe how particular number in report is calculated and why is not equal to
+          similar in another report (as I remember we was have ~30 reports).
+          Previously reports is was composed using Java and to answer we was need a 1-2 hour.
+          In my solution I deside to write MS Excel template with macros in Basic
+          (not usual solution for PL/SQL and Java developers). I put SQL conditions
+          to hidden rows and cols opposite to result cels. As result we can see into report
+          table and give an answer immediately. 
 
 skills:
     title: Skills
 
     toolset:
-      - name: Python (Django, FastAPI, Pandas, Flask, AsyncIO, Threading, Cryptography, PyGObject). From 2013
-      - name: Js & Ts (Node, Vue, Nuxt, Meteor, React, Backbone, jQuery). From 2012
-      - name: Databases (MySql, Postgres, MongoDB). From 2010
-      - name: Other tools like Radis, RabbitMQ, Elastic
-      - name: Knowledge of a Linux system, Docker, some DevOps skills
+      - name: Python
+      - name: TypeScript
+      - name: SQL and NoSQL databases
+      - name: Swagger and OpenAPI based client code generation
+      - name: Radis, RabbitMQ
+      - name: Linux system, Docker, Azure
+      - name: "Familiar with other languages: Ruby, C++, Go, PHP"
